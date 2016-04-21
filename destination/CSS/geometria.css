@@ -1,0 +1,71 @@
+section {
+  padding-top: 100em;
+  padding-bottom: 7em; }
+
+body {
+  background-color: blue; }
+
+.partial-separator, .skew-separator--top__complimentary-dark, .skew-separator--bottom__complimentary-dark, .home-offer-separator--top, .home-offer-separator--bottom {
+  position: relative; }
+  .partial-separator::before, .skew-separator--top__complimentary-dark::before, .skew-separator--bottom__complimentary-dark::before, .home-offer-separator--top::before, .home-offer-separator--bottom::before {
+    position: absolute;
+    content: "";
+    border-width: 0;
+    width: 0;
+    height: 0;
+    border-style: solid; }
+  .partial-separator::after, .skew-separator--top__complimentary-dark::after, .skew-separator--bottom__complimentary-dark::after, .home-offer-separator--top::after, .home-offer-separator--bottom::after {
+    position: absolute;
+    content: "";
+    border-width: 0;
+    width: 0;
+    height: 0;
+    border-style: solid; }
+
+.skew-separator--top__complimentary-dark::before {
+  bottom: 0;
+  border-left-width: 100vw;
+  border-left-color: black;
+  border-top-width: 4em;
+  border-top-color: transparent; }
+
+.skew-separator--bottom__complimentary-dark::before {
+  top: 0;
+  border-right-width: 100vw;
+  border-right-color: black;
+  border-bottom-width: 4em;
+  border-bottom-color: transparent; }
+
+.home-offer-separator--top::before {
+  top: 0;
+  left: 1px;
+  border-right-width: 50vw;
+  border-right-color: blue;
+  border-bottom-width: 2em;
+  border-bottom-color: transparent;
+  z-index: 100; }
+
+.home-offer-separator--top::after {
+  top: 0;
+  right: 0;
+  border-left-width: 50vw;
+  border-left-color: blue;
+  border-bottom-width: 2em;
+  border-bottom-color: transparent;
+  z-index: 100; }
+
+.home-offer-separator--bottom::before {
+  bottom: 0;
+  left: 1px;
+  border-right-width: 50vw;
+  border-right-color: black;
+  border-top-width: 2em;
+  border-top-color: transparent; }
+
+.home-offer-separator--bottom::after {
+  bottom: 0;
+  left: 50%;
+  border-left-width: 50vw;
+  border-left-color: black;
+  border-top-width: 2em;
+  border-top-color: transparent; }

@@ -1,0 +1,173 @@
+
+.bg-accent-darkest {
+    background-color: $accent-darkest;
+}
+
+.bg-accent-dark {
+    background-color: $accent-dark;
+}
+
+.bg-accent {
+    background-color: $accent;
+}
+
+.bg-accent-light {
+    background-color: $accent-light;
+}
+
+.bg-accent-dark {
+    background-color: $accent-dark;
+}
+
+.bg-grey {
+    background-color: $grey;
+}
+
+.bg-complimentary-dark {
+  background-color: $complimentary-dark;
+}
+
+.bg-complimentary-darkest {
+    background-color: $complimentary-darkest;
+}
+
+.bg-offer {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image--home-offer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('http://plethorathemes.com/healthflex/wp-content/uploads/2013/06/doctor_blue_left.jpg');
+  background-size: cover;
+  background-position: center;
+
+  filter: brightness(0.7);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.bg-offer div div {
+  z-index: 100;
+}
+
+.bg-third {
+  background-color: $third;
+}
+
+.department-header {
+  background-image: url('http://plethorathemes.com/healthflex/wp-content/uploads/2015/10/cosmetic.jpg');
+  background-size: cover;
+}
+
+$angle: 4em;
+.partial-separator {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-width: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      border-width: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+}
+
+.skew-separator--top__complimentary-dark {
+  @extend .partial-separator;
+
+  &::before {
+    bottom: 0;
+    border-left-width: 100vw;
+    border-left-color: $complimentary-dark;
+    border-top-width: $angle;
+    border-top-color: rgba(0,0,0,0);
+    // z-index: -1;
+  }
+}
+
+.skew-separator--bottom__complimentary-dark {
+  @extend .partial-separator;
+
+  &::before {
+    top: 0;
+    border-right-width: 100vw;
+    border-right-color: $complimentary-dark;
+    border-bottom-width: $angle;
+    border-bottom-color: rgba(0,0,0,0);
+    // z-index: -1;
+  }
+}
+
+.home-offer-separator--top {
+  @extend .partial-separator;
+
+  &::before {
+    top: 0;
+    left: 1px;
+    border-right-width: 50vw;
+    border-right-color: $grey;
+    border-bottom-width: $angle/2;
+    border-bottom-color: rgba(0,0,0,0);
+    z-index: 100;
+  }
+
+  &::after {
+    top: 0;
+    right: 0;
+    border-left-width: 50vw;
+    border-left-color: $grey;
+    border-bottom-width: $angle/2;
+    border-bottom-color: rgba(0,0,0,0);
+    z-index: 100;
+  }
+}
+
+.home-offer-separator--bottom {
+  @extend .partial-separator;
+  // transform: translateY(0px);
+
+  &::before {
+    bottom: 0;
+    left: 1px;
+    border-right-width: 50vw;
+    border-right-color: $complimentary-dark;
+    border-top-width: $angle/2;
+    border-top-color: rgba(0,0,0,0);
+    // z-index: -1;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 50%;
+    border-left-width: 50vw;
+    border-left-color: $complimentary-dark;
+    border-top-width: $angle/2;
+    border-top-color: rgba(0,0,0,0);
+    // z-index: -1;
+  }
+}
+
+// body {
+//
+//   filter: blur(3px);
+// }

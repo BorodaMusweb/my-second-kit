@@ -1,0 +1,24 @@
+{
+  "name": "my-second-kit",
+  "version": "1.0.0",
+  "description": "мой второй проект",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug2": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorodaMusweb/my-second-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BorodaMusweb/my-second-kit/issues"
+  },
+  "homepage": "https://github.com/BorodaMusweb/my-second-kit#readme"
+}
