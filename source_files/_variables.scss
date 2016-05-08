@@ -1,0 +1,55 @@
+
+// Цитата
+$blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 1px solid #ddd;
+$blockquote-cite-font-size: rem-calc(13);
+$blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
+$blockquote-cite-link-color: $blockquote-cite-font-color;
+
+
+// Черта
+$hr-border-width: 1px;
+$hr-border-style: solid;
+$hr-border-color: #ddd;
+$hr-margin: rem-calc(20);
+
+
+// ОСНОВНЫЕ ЦВЕТА
+
+$accent: rgb(33, 153, 232); //  основной цвет темы #2199e8;
+$accent: #80D6E8; //  основной цвет темы #2199e8;
+
+$complimentary: desaturate(adjust_hue($accent, 9), 35%); // дополнительный цвет темы
+$third: #5cb85c;
+
+// БАЗОВЫЕ ЦВЕТА
+$black: lighten(black,5%);
+$grey: darken(white,5%);
+$white: white;
+
+// ПРОИЗВОДНЫЕ ЦВЕТА
+$accent-dark: darken($accent, 5%);
+$accent-darkest: darken($accent, 15%);
+$accent-light: lighten($accent, 7%);
+
+$complimentary-dark: darken($complimentary, 23%);
+$complimentary-darkest: darken($complimentary, 35%);
+
+$third-dark: darken($third, 23%);
+$third-darkest: darken($third, 35%);
+
+// ТИПОГРАФИКА
+
+// Цвета шрифтов
+$font-color: $black;
+
+
+// Размеры шрифтов
+$base-font-size: 1em;
+$smaller-font-size: $base-font-size * 0.7;
+$small-font-size: $base-font-size * 0.9;
+$bigger-font-size: $base-font-size * 1.2;
+$giant-font-size: $base-font-size * 2.2;
+
+//Колонки

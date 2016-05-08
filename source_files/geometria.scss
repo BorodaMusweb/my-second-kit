@@ -1,17 +1,50 @@
-// PADDINGS
+//Фигуры
+$accent: #FF439B; //  основной цвет темы #2199e8;
+$complimentary: desaturate(adjust_hue($accent, 170), 50%); // дополнительный цвет темы
 
-$var-top: 100em;
-section {
-  padding-top: $var-top;
-  padding-bottom: 7em;
+.cherta{
+border-color: darken($accent, 10%);
+border-style: dashed;
+border-width: 2px;
 }
 
-body {
-  background-color: blue;
+// Контейнер для предложения
+.bg-offer div div {
+  z-index: 100;
 }
 
-//скосы
+.margin-big {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
 
+.bg-offer {
+  position: relative;
+  overflow: hidden;
+}
+
+// Фон для предложения
+.bg-image--home-offer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('http://musweb.ru/wp-content/uploads/2014/09/IMG_3618-Edit-Edit-copy.jpg');
+  background-size:cover;
+  background-position: center;
+  filter: brightness(0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+//СКОСЫ
+//Переменная угла
 $angle: 4em;
 .partial-separator {
     position: relative;
@@ -68,7 +101,7 @@ $angle: 4em;
     top: 0;
     left: 1px;
     border-right-width: 50vw;
-    border-right-color: blue;
+    border-right-color: black;
     border-bottom-width: $angle/2;
     border-bottom-color: rgba(0,0,0,0);
     z-index: 100;
@@ -78,7 +111,7 @@ $angle: 4em;
     top: 0;
     right: 0;
     border-left-width: 50vw;
-    border-left-color: blue;
+    border-left-color: black;
     border-bottom-width: $angle/2;
     border-bottom-color: rgba(0,0,0,0);
     z-index: 100;
@@ -109,3 +142,19 @@ $angle: 4em;
     // z-index: -1;
   }
 }
+
+
+
+// PADDINGS
+
+// $var-top: 100em;
+// section {
+//   padding-top: $var-top;
+//   padding-bottom: 7em;
+// }
+//
+// body {
+//   background-color: blue;
+// }
+//
+//скосы

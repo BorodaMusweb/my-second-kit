@@ -1,9 +1,34 @@
-section {
-  padding-top: 100em;
-  padding-bottom: 7em; }
+.cherta {
+  border-color: #ff1080;
+  border-style: dashed;
+  border-width: 2px; }
 
-body {
-  background-color: blue; }
+.bg-offer div div {
+  z-index: 100; }
+
+.margin-big {
+  margin-top: 10em;
+  margin-bottom: 10em; }
+
+.bg-offer {
+  position: relative;
+  overflow: hidden; }
+
+.bg-image--home-offer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://musweb.ru/wp-content/uploads/2014/09/IMG_3618-Edit-Edit-copy.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .partial-separator, .skew-separator--top__complimentary-dark, .skew-separator--bottom__complimentary-dark, .home-offer-separator--top, .home-offer-separator--bottom {
   position: relative; }
@@ -40,7 +65,7 @@ body {
   top: 0;
   left: 1px;
   border-right-width: 50vw;
-  border-right-color: blue;
+  border-right-color: black;
   border-bottom-width: 2em;
   border-bottom-color: transparent;
   z-index: 100; }
@@ -49,7 +74,7 @@ body {
   top: 0;
   right: 0;
   border-left-width: 50vw;
-  border-left-color: blue;
+  border-left-color: black;
   border-bottom-width: 2em;
   border-bottom-color: transparent;
   z-index: 100; }
